@@ -1,0 +1,36 @@
+func toLeetSpeak(_ s: String) -> String {
+    var letspeakWord = ""
+    for letter in s.uppercased() {
+        switch letter {
+        case "A": letspeakWord += "@"
+        case "B": letspeakWord += "8"
+        case "C": letspeakWord += "("
+        case "D": letspeakWord += "D"
+        case "E": letspeakWord += "3"
+        case "F": letspeakWord += "F"
+        case "G": letspeakWord += "6"
+        case "H": letspeakWord += "#"
+        case "I": letspeakWord += "!"
+        case "J": letspeakWord += "J"
+        case "K": letspeakWord += "K"
+        case "L": letspeakWord += "1"
+        case "M": letspeakWord += "M"
+        case "N": letspeakWord += "N"
+        case "O": letspeakWord += "0"
+        case "P": letspeakWord += "P"
+        case "Q": letspeakWord += "Q"
+        case "R": letspeakWord += "R"
+        case "S": letspeakWord += "$"
+        case "T": letspeakWord += "7"
+        case "U": letspeakWord += "U"
+        case "V": letspeakWord += "V"
+        case "W": letspeakWord += "W"
+        case "X": letspeakWord += "X"
+        case "Y": letspeakWord += "Y"
+        case "Z": letspeakWord += "2"
+          default: letspeakWord += String(letter)
+        }
+    }
+
+    return letspeakWord 
+}
